@@ -6,20 +6,37 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view> -->
-    <uv-icon name="photo"></uv-icon>
+    <uv-checkbox-group v-model="checkboxValue">
+      <uv-checkbox
+        :customStyle="{ marginBottom: '8px' }"
+        v-for="(item, index) in checkboxList"
+        :key="index"
+        :label="item.name"
+        :name="item.name"></uv-checkbox>
+    </uv-checkbox-group>
   </view>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      title: 'Hello',
-    };
+<script lang="jsx" setup>
+import { ref } from 'vue';
+import { onReady, onShow } from '@dcloudio/uni-app';
+
+const checkboxValue = ref(['苹果']);
+
+const checkboxList = ref([
+  {
+    name: '苹果',
+    disabled: false,
   },
-  onLoad() {},
-  methods: {},
-};
+  {
+    name: '香蕉',
+    disabled: false,
+  },
+  {
+    name: '橙子',
+    disabled: false,
+  },
+]);
 </script>
 
 <style>
