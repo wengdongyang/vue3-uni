@@ -56,6 +56,16 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4010520240507001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4010520240507001",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vueuse/core": "^10.11.0",
+    "ahooks-vue": "^0.15.1",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.11",
+    "jshashes": "^1.0.8",
+    "lodash": "^4.17.21",
+    "mathjs": "^13.0.2",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "qs": "^6.12.3",
     "vue": "^3.4.21",
     "vue-i18n": "^9.1.9"
   },
@@ -68,6 +78,7 @@
     "@vue/runtime-core": "^3.4.21",
     "sass": "^1.77.6",
     "sass-loader": "^14.2.1",
+    "unplugin-vue-setup-extend-plus": "^1.0.1",
     "vite": "5.2.8"
   }
 }
