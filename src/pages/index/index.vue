@@ -2,18 +2,24 @@
 
 <template>
   <view class="content">
-    <!-- <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view> -->
     <uv-icon name="photo"></uv-icon>
+
+    {{ title }}
   </view>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-
+import { ref, computed } from 'vue';
+import { get, set } from '@vueuse/core';
+import { onLoad, onShow, onHide } from '@dcloudio/uni-app';
+// apis
+// hooks
+// utils
+// stores
+// configs
+// components
 const title = ref('Hello');
 </script>
-
-<style></style>
+<style lang="scss" scoped>
+@import './index.scss';
+</style>

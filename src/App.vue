@@ -1,4 +1,10 @@
 <script>
+// apis
+// hooks
+// utils
+// stores
+// configs
+// components
 export default {
   onLaunch() {
     console.log('App Launch');
